@@ -3,7 +3,7 @@ import ContactList from "../components/ContactList/ContactList";
 import Container from "../components/Container/Container";
 import Filter from "../components/Filter/Filter";
 import { useState } from "react";
-import { useGetContactsQuery } from "../redux/phonebookApi";
+import { useGetContactsQuery } from "../redux/phonebook/phonebook-api";
 
 function ContactsView() {
   const { data } = useGetContactsQuery("");

@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import {
   useAddContactMutation,
   useGetContactsQuery,
-} from "../../redux/phonebookApi";
+} from "../../redux/phonebook/phonebook-api";
 
 function ContactForm() {
   const [addContact] = useAddContactMutation();
