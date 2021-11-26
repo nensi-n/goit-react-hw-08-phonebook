@@ -35,8 +35,8 @@ export default function LoginView() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email) return toast.error("Please input email !!!");
-    if (!password) return toast.error("Please input password !!!");
+    if (!email) return toast.info("Please input email !!!");
+    if (!password) return toast.info("Please input password !!!");
 
     dispatch(authOperations.logIn({ email, password }));
     setEmail("");

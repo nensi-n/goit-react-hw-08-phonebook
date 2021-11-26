@@ -35,9 +35,9 @@ export default function RegisterView() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name) return toast.error("Please input name");
-    if (!email) return toast.error("Please input email");
-    if (!password) return toast.error("Please input password");
+    if (!name) return toast.info("Please input name");
+    if (!email) return toast.info("Please input email");
+    if (!password) return toast.info("Please input password");
     dispatch(authOperations.register({ name, email, password }));
     setName("");
     setEmail("");
